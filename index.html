@@ -132,10 +132,10 @@ footer{background:#111827;color:#9ca3af;padding:24px 0;text-align:center;font-si
 <h2>添加微信：免费诊断 + 微信内付款下单</h2>
 <p style="color:#9a3412;">把任意一个询盘发给我，免费帮你看：这个买家是真是假、值不值得跟（每天限量 5 份）；确认购买也在微信里完成付款。</p>
 <div class="qr-row">
-<div class="qr-box">你的微信二维码<br>（替换成你的）</div>
+<div><img src="wechat-qr.png" alt="微信二维码" id="wechatQr" style="width:140px;height:140px;border-radius:10px;display:none;object-fit:cover;"><div class="qr-box" id="qrPlaceholder">微信二维码<br>（可后补）</div></div>
 <div class="qr-text">
 <p><b>添加微信，备注通过更快</b></p>
-<p>微信号：待填写</p>
+<p>微信号：<span id="wechatId">待填写</span> <button onclick="copyWechat()" style="background:#0f4c81;color:#fff;border:none;border-radius:6px;padding:4px 12px;font-size:13px;cursor:pointer;">复制微信号</button></p>
 <p style="margin-top:6px;">备注「买家诊断」或「买报告」</p>
 </div>
 </div>
@@ -155,6 +155,6 @@ footer{background:#111827;color:#9ca3af;padding:24px 0;text-align:center;font-si
 </div>
 </section>
 
-<footer><div class="container">BuyerScope · 10 年外贸 B2B 实战经验封装成的买家情报系统<br>小红书号：9996666631<br>本产品基于公开信息生成，仅供决策参考，不构成交易或法律建议。</div></footer>
-</body>
+<footer><div class="container">BuyerScope · 10 年外贸 B2B 实战经验封装成的买家情报系统<br>小红书：外贸老马识途（号 9996666631）<br>本产品基于公开信息生成，仅供决策参考，不构成交易或法律建议。</div></footer>
+<script>var qr=document.getElementById("wechatQr");qr.onload=function(){qr.style.display="block";document.getElementById("qrPlaceholder").style.display="none";};function copyWechat(){var t=document.getElementById("wechatId").innerText;if(t==="待填写"){alert("微信号还没填写，稍后再试");return;}navigator.clipboard.writeText(t).then(function(){alert("微信号已复制，去微信搜索添加");});}</script></body>
 </html>
