@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BuyerScope 买家情报报告｜外贸询盘，先看值不值得跟</title>
 <style>
-:root{--brand:#0f4c81;--brand2:#1661a8;--accent:#e8a33d;--bg:#f7f8fa;--card:#fff;--text:#1f2937;--muted:#6b7280;--border:#e5e7eb;}
+:root{--brand:#0f4c81;--brand2:#1661a8;--accent:#ff7a2f;--bg:#f7f8fa;--card:#fff;--text:#1f2937;--muted:#6b7280;--border:#e5e7eb;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;}
 .container{max-width:980px;margin:0 auto;padding:0 20px;}
 .nav{background:var(--brand);color:#fff;padding:14px 0;}
 .nav .container{display:flex;justify-content:space-between;align-items:center;}
 .logo{font-size:20px;font-weight:700;letter-spacing:.5px;}
-.logo span{color:var(--accent);}
-.hero{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:64px 0 56px;text-align:center;}
+.logo span{color:#ffd166;}
+.hero{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:60px 0 52px;text-align:center;}
 .hero h1{font-size:30px;line-height:1.4;margin-bottom:16px;}
 .hero p{font-size:17px;opacity:.92;max-width:640px;margin:0 auto 28px;}
-.cta{display:inline-block;background:var(--accent);color:#1f2937;font-weight:700;padding:14px 34px;border-radius:8px;text-decoration:none;font-size:17px;}
-.cta.secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.7);margin-left:12px;}
+.cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 34px;border-radius:8px;text-decoration:none;font-size:17px;box-shadow:0 4px 12px rgba(255,122,47,.35);}
+.cta.secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.7);margin-left:12px;box-shadow:none;}
 section{padding:48px 0;}
 h2{font-size:24px;margin-bottom:24px;text-align:center;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;}
@@ -27,10 +27,23 @@ h2{font-size:24px;margin-bottom:24px;text-align:center;}
 .pain{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .pain ul{max-width:640px;margin:0 auto;padding-left:20px;}
 .pain li{margin:10px 0;font-size:15px;}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:8px;}
+.step{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:center;}
+.step .num{display:inline-block;width:32px;height:32px;line-height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;margin-bottom:10px;}
+.step h4{font-size:15px;margin-bottom:6px;}
+.step p{font-size:13px;color:var(--muted);}
 .pricing{text-align:center;}
 .price-box{display:inline-block;background:var(--card);border:2px solid var(--brand);border-radius:12px;padding:28px 40px;margin-top:12px;}
 .price{font-size:40px;font-weight:800;color:var(--brand);}
 .price small{font-size:14px;color:var(--muted);}
+.price-old{color:var(--muted);text-decoration:line-through;font-size:15px;}
+.badges{margin-top:14px;}
+.badge{display:inline-block;background:#07c160;color:#fff;font-size:13px;font-weight:600;padding:5px 14px;border-radius:6px;margin:4px;}
+.badge.alipay{background:#1677ff;}
+.free{background:linear-gradient(135deg,#fff7ed,#ffedd5);border-top:1px solid #fed7aa;border-bottom:1px solid #fed7aa;text-align:center;}
+.qr-row{display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;margin-top:18px;}
+.qr-box{width:140px;height:140px;border:2px dashed #fb923c;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#c2410c;font-size:13px;background:#fff;padding:8px;text-align:center;}
+.qr-text{text-align:left;font-size:14px;color:#7c2d12;}
 .faq details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin-bottom:10px;text-align:left;}
 .faq summary{font-weight:600;cursor:pointer;}
 .faq p{font-size:14px;margin-top:8px;color:var(--muted);}
@@ -41,14 +54,14 @@ footer{background:#111827;color:#9ca3af;padding:24px 0;text-align:center;font-si
 </style>
 </head>
 <body>
-<nav class="nav"><div class="container"><div class="logo">Buyer<span>Scope</span></div><div style="font-size:14px;">买家情报报告 · $19</div></div></nav>
+<nav class="nav"><div class="container"><div class="logo">Buyer<span>Scope</span></div><div style="font-size:14px;">外贸买家情报报告 · ¥99/份</div></div></nav>
 
 <header class="hero">
 <div class="container">
-<h1>别再凭感觉开发客户<br>10 年外贸经验，打包进一份 $19 的买家报告</h1>
-<p>买家真实性、规模、采购意向、谈判策略——AI 自动分析，30 分钟交付，附可执行的开发打法。</p>
-<a class="cta" href="#pricing">立即获取报告 — $19</a>
-<a class="cta secondary" href="#faq">先看 FAQ</a>
+<h1>别再凭感觉开发客户<br>10 年外贸经验，打包成一份 ¥99 的买家报告</h1>
+<p>买家真实性、规模、采购意向、谈判策略——AI 自动分析，30~60 分钟交付，微信直发报告。</p>
+<a class="cta" href="#pricing">立即购买 — ¥99</a>
+<a class="cta secondary" href="#free">先免费诊断</a>
 </div>
 </header>
 
@@ -72,7 +85,7 @@ footer{background:#111827;color:#9ca3af;padding:24px 0;text-align:center;font-si
 <div class="card"><h3>① 真实性验证</h3><p>公司是否真实存在，垃圾/钓鱼/骗局第一关就帮你拦下。</p></div>
 <div class="card"><h3>② 7 维买家评分</h3><p>真实性、规模、意向、持续性、匹配度、谈判友好度、风险红旗。</p></div>
 <div class="card"><h3>③ 买家画像</h3><p>业务模式、主营产品、目标市场、采购频率与量级。</p></div>
-<div class="card"><h3>④ 开发打法</h3><p>切入点、首封开发信角度、D1/D3/D7/D14 跟进节奏。</p></div>
+<div class="card"><h3>④ 开发打法</h3><p>切入点、首封开发信角度、跟进节奏（D1/D3/D7/D14）。</p></div>
 <div class="card"><h3>⑤ 谈判要点</h3><p>客户会怎么压价、你的底线怎么定、替代方案。</p></div>
 <div class="card"><h3>⑥ 风险提示</h3><p>红旗清单与注意事项，不踩坑。</p></div>
 </div>
@@ -91,23 +104,55 @@ footer{background:#111827;color:#9ca3af;padding:24px 0;text-align:center;font-si
 </div>
 </section>
 
+<section>
+<div class="container">
+<h2>怎么拿到报告（4 步）</h2>
+<div class="steps">
+<div class="step"><div class="num">1</div><h4>付款下单</h4><p>微信或支付宝扫码支付</p></div>
+<div class="step"><div class="num">2</div><h4>提交买家信息</h4><p>把买家公司名/邮箱/询盘截图发微信</p></div>
+<div class="step"><div class="num">3</div><h4>AI 分析+人工复核</h4><p>30~60 分钟完成制作</p></div>
+<div class="step"><div class="num">4</div><h4>微信收到报告</h4><p>PDF 直发，含开发打法</p></div>
+</div>
+</div>
+</section>
+
 <section class="pricing" id="pricing">
 <div class="container">
 <h2>价格</h2>
 <div class="price-box">
 <div style="font-weight:700;margin-bottom:8px;">BuyerScope 买家情报报告</div>
-<div class="price">$19 <small>/ 份</small></div>
+<div><span class="price-old">¥199</span> <span class="price">¥99</span> <small>/ 份</small></div>
 <div style="margin:12px 0 8px;color:var(--muted);">30~60 分钟交付 · 人工复核 · 查无此公司可退款</div>
 <a class="cta" href="#">立即购买</a>
+<div class="badges">
+<span class="badge">微信支付</span><span class="badge alipay">支付宝</span>
 </div>
-<div class="note">限时：前 10 单首单 $9.9；3 份打包 $49</div>
+</div>
+<div class="note">限时：前 10 名首单 ¥49 ｜ 3 份打包 ¥249</div>
+</div>
+</section>
+
+<section class="free" id="free">
+<div class="container">
+<h2>不确定值不值得买？先免费诊断一个买家</h2>
+<p style="color:#9a3412;">把任意一个询盘发给我，免费帮你看：这个买家是真是假、值不值得跟（每天限量 5 份）</p>
+<div class="qr-row">
+<div class="qr-box">你的微信二维码<br>（替换成你的）</div>
+<div class="qr-text">
+<p><b>添加微信领取免费诊断</b></p>
+<p>微信号：待填写</p>
+<p style="margin-top:6px;">备注「买家诊断」通过更快</p>
+</div>
+</div>
 </div>
 </section>
 
 <section class="faq" id="faq">
 <div class="container">
 <h2>常见问题</h2>
-<details><summary>怎么提交买家信息？</summary><p>填一个简单表单：买家公司名/邮箱/询盘截图即可。</p></details>
+<details><summary>怎么付款？</summary><p>支持微信支付和支付宝，扫码即可；付款后把支付截图发微信即可安排制作。</p></details>
+<details><summary>报告怎么交付？</summary><p>制作完成后通过微信把报告 PDF 直接发给你，也支持邮箱。</p></details>
+<details><summary>怎么提交买家信息？</summary><p>把买家公司名、邮箱或询盘截图发到微信即可，越详细报告越准。</p></details>
 <details><summary>多久能拿到报告？</summary><p>30~60 分钟（含人工复核），先付款后排单制作。</p></details>
 <details><summary>数据从哪来？准确吗？</summary><p>公开数据源多源交叉（官网/工商/LinkedIn/海关公开数据等）。只报告能验证的证据，查不到的明确标注，不做 100% 承诺。</p></details>
 <details><summary>能保证成交吗？</summary><p>不能。我们给的是判断和打法，成交还看你的产品和执行。</p></details>
@@ -115,6 +160,6 @@ footer{background:#111827;color:#9ca3af;padding:24px 0;text-align:center;font-si
 </div>
 </section>
 
-<footer><div class="container">BuyerScope · 10 年外贸 B2B 实战经验封装成的买家情报系统<br>本产品基于公开信息生成，仅供决策参考，不构成交易或法律建议。</div></footer>
+<footer><div class="container">BuyerScope · 10 年外贸 B2B 实战经验封装成的买家情报系统<br>小红书：@待填写（10 年外贸老业务）<br>本产品基于公开信息生成，仅供决策参考，不构成交易或法律建议。</div></footer>
 </body>
 </html>
